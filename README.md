@@ -1,44 +1,66 @@
-# Astro Starter Kit: Minimal
+# Tefacturo Website
 
-```sh
-bun create astro@latest -- --template minimal
-```
+A modern, responsive website for Tefacturo built with Astro and Tailwind CSS.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## 🚀 Deployment to Cloudflare Pages
 
-## 🚀 Project Structure
+### Option 1: GitHub Integration (Recommended - Automatic Deployments)
 
-Inside of your Astro project, you'll see the following folders and files:
+1. **Push your code to GitHub**
+2. **Connect to Cloudflare Pages:**
+   - Go to [Cloudflare Pages](https://pages.cloudflare.com/)
+   - Click "Create a project"
+   - Connect your GitHub repository
+   - Configure build settings:
+     - **Build command:** `npm run build`
+     - **Build output directory:** `dist`
+     - **Root directory:** `/` (leave empty)
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
-```
+3. **Deploy automatically on every push!**
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+### Option 2: Manual Upload
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+1. **Build the project:**
+   ```bash
+   ./deploy.sh
+   ```
 
-Any static assets, like images, can be placed in the `public/` directory.
+2. **Upload to Cloudflare Pages:**
+   - Go to [Cloudflare Pages](https://pages.cloudflare.com/)
+   - Click "Create a project"
+   - Choose "Upload assets" (instead of Git)
+   - Upload the entire `dist` folder
 
-## 🧞 Commands
-
-All commands are run from the root of the project, from a terminal:
+## 🧞 Local Development
 
 | Command                   | Action                                           |
 | :------------------------ | :----------------------------------------------- |
-| `bun install`             | Installs dependencies                            |
-| `bun dev`             | Starts local dev server at `localhost:4321`      |
-| `bun build`           | Build your production site to `./dist/`          |
-| `bun preview`         | Preview your build locally, before deploying     |
-| `bun astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `bun astro -- --help` | Get help using the Astro CLI                     |
+| `npm install`             | Installs dependencies                            |
+| `npm run dev`             | Starts local dev server at `localhost:4321`      |
+| `npm run build`           | Build your production site to `./dist/`          |
+| `npm run preview`         | Preview your build locally, before deploying     |
 
-## 👀 Want to learn more?
+## 🎨 Features
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
-# tenzoft-tefacturo-website
+- Modern Astro framework
+- Tailwind CSS with Nord theme
+- Responsive design
+- Optimized fonts (Outfit)
+- Shockwave animations
+- Hidden scrollbars for clean UI
+
+## 📁 Project Structure
+
+```
+/
+├── public/          # Static assets
+├── src/
+│   ├── components/  # Reusable components
+│   ├── layouts/     # Page layouts
+│   ├── pages/       # Route pages
+│   ├── sections/    # Page sections
+│   └── styles/      # Global styles
+├── astro.config.mjs # Astro configuration
+├── wrangler.toml    # Cloudflare Pages config
+└── deploy.sh        # Deployment script
+```

@@ -1,0 +1,72 @@
+---
+export interface Props {
+  title?: string;
+  subtitle?: string;
+}
+
+---
+
+<section class="flex flex-col items-center justify-center h-[calc(100vh-102px)] py-7">
+  <div class="flex flex-row justify-center  w-full h-full px-[var(--x-axis-main-content-padding)] sm:px-[var(--x-axis-main-content-padding-sm)] lg:px-[var(--x-axis-main-content-padding-lg)]">
+    <div class="min-w-0 flex flex-8 flex-col items-start  w-auto h-full  justify-between">
+      
+      <div class="flex flex-1 flex-col space-y-2  justify-center">
+
+      <h1 class="text-7xl font-medium text-nord0 font-sans leading-24">
+        ¿Cansado de 
+        <br> 
+
+        <span class="bg-gradient-to-tl from-nord9 to-nord10 bg-clip-text text-transparent font-bold">perder</span> el <span class="bg-gradient-to-tr from-nord9 to-nord10 bg-clip-text text-transparent font-bold">tiempo</span> 
+        <br>
+        facturando
+        <span class="bg-gradient-to-br from-nord9 to-nord10 bg-clip-text text-transparent font-bold"> tickets</span>?
+      </h1>
+
+      <p class="text-xl text-nord0 font-sans leading-9">
+        Factura tus tickets en piloto automático
+      </p>
+
+      <p class="text-xl text-nord0/60 font-sans leading-9">
+
+        Deja de perder dinero por no facturar tickets a tiempo. TeFacturo está
+        <br> pensado para que pequeños y medianos empresarios puedan delegar la
+        <br> facturación de sus tickets y concentrarse en lo que de verdad importa:
+        <br> su negocio. Nos encargamos de tus responsabilidades tediosas y repetitvas 
+        <br> para que te puedas enfocar en lo que de verdad importa.
+
+       </p>
+
+    </div>
+
+        <div id="company-moving-logos" class="relative w-full max-w-[85%] overflow-hidden mb-4" style="mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent); -webkit-mask-image: linear-gradient(to right, transparent, black 20%, black 80%, transparent);">
+          <div class="flex flex-row space-x-3 w-max animate-scroll">
+            <div class="min-h-12 min-w-36 bg-nord10 rounded-full"></div>
+            <div class="min-h-12 min-w-36 bg-nord10 rounded-full"></div>
+            <div class="min-h-12 min-w-36 bg-nord10 rounded-full"></div>  
+            <div class="min-h-12 min-w-36 bg-nord10 rounded-full"></div>
+            <div class="min-h-12 min-w-36 bg-nord10 rounded-full"></div>
+            <div class="min-h-12 min-w-36 bg-nord10 rounded-full"></div>
+            <div class="min-h-12 min-w-36 bg-nord10 rounded-full"></div>
+            <div class="min-h-12 min-w-36 bg-nord10 rounded-full"></div>
+            <!-- duplicate set for seamless loop -->
+            <div class="min-h-12 min-w-36 bg-nord10 rounded-full" aria-hidden="true"></div>
+            <div class="min-h-12 min-w-36 bg-nord10 rounded-full" aria-hidden="true"></div>
+            <div class="min-h-12 min-w-36 bg-nord10 rounded-full" aria-hidden="true"></div>  
+            <div class="min-h-12 min-w-36 bg-nord10 rounded-full" aria-hidden="true"></div>
+            <div class="min-h-12 min-w-36 bg-nord10 rounded-full" aria-hidden="true"></div>
+            <div class="min-h-12 min-w-36 bg-nord10 rounded-full" aria-hidden="true"></div>
+            <div class="min-h-12 min-w-36 bg-nord10 rounded-full" aria-hidden="true"></div>
+            <div class="min-h-12 min-w-36 bg-nord10 rounded-full" aria-hidden="true"></div>
+          </div>
+        </div>
+
+    </div>
+    <div class="min-w-0 flex flex-6 flex-col items-center justify-center w-auto h-full ">
+      <img 
+        src="/assets/elements/Hand4Website.png" 
+        alt="Mano ilustrada para la web"
+        class="max-w-full max-h-full object-contain"
+      />
+    </div>
+  </div>
+</section>

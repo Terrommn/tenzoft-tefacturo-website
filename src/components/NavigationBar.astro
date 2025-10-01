@@ -1,0 +1,30 @@
+---
+export interface Props {
+  title?: string;
+}
+
+const { title = "TeFacturo.io" } = Astro.props;
+---
+
+<nav class="bg-nord6">
+  <div class=" px-[var(--x-axis-main-content-padding)] sm:px-[var(--x-axis-main-content-padding-sm)] lg:px-[var(--x-axis-main-content-padding-lg)]">
+    <div class="flex justify-between items- py-4">
+      <!-- Leading Image -->
+      <div class="flex items-center">
+        <img
+          src="/assets/icon-dark.png"
+          alt="Tefacturo Logo"
+          class="h-8 w-8 mr-3"
+        />
+        <h1 class="text-xl font-semibold text-nord0 font-sans">{title}</h1>
+      </div>
+
+      <!-- Probar Ya Button -->
+      <div class="flex items-center">
+        <button class="bg-nord2 text-white font-bold py-2 px-6 rounded-full transition duration-200 shadow-md hover:shadow-lg font-sans">
+          Probar Ya
+        </button>
+      </div>
+    </div>
+  </div>
+</nav>

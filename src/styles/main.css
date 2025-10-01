@@ -1,0 +1,44 @@
+@import "tailwindcss";
+@plugin "tailwind-nord";
+
+@font-face {
+  font-family: 'Outfit';
+  src: url('/fonts/outfit/Outfit-VariableFont_wght.ttf') format('truetype-variations');
+  font-weight: 100 900;
+  font-display: swap;
+}
+
+@theme {
+  --font-family-sans: 'Outfit', system-ui, sans-serif;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.animate-scroll {
+  animation: scroll 20s linear infinite;
+  will-change: transform;
+}
+
+:root {
+  --x-axis-main-content-padding: 4rem;
+  --x-axis-main-content-padding-sm: 4.5rem;
+  --x-axis-main-content-padding-lg: 5.0rem;
+}
+
+/* Hide scrollbars completely */
+html, body {
+  scrollbar-width: none; /* Firefox */
+  -ms-overflow-style: none; /* IE and Edge */
+}
+
+html::-webkit-scrollbar,
+body::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, and Opera */
+}
